@@ -8,8 +8,8 @@ def home(request):
   return render(request, 'home.html', context)
 
 def detail(request, book_id):
-  context = {
-    'book': Book.objects.get(id=book_id)
+  books = {
+    'books': Book.objects.get(id=book_id)
   }
-  return render(request, 'detail.html', context)
+  return render(request, 'detail.html', books)
 
