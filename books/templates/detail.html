@@ -1,11 +1,10 @@
 <h1>Details</h1>
 
-    <li>
-      <a href="/book/{{ book.id }}">{{ book.title }}</a>
-      <a href="/book/{{ book.id }}">{{ book.num_pages }}</a>
-      <a href="/book/{{ book.id }}">{{ book.date_published }}</a>
-      <a href="/book/{{ book.id }}">{{ author.name }}</a>
-      <a href="/book/{{ book.id }}">{{ author.birth_date }}</a>
-      <a href="/book/{{ book.id }}">{{ tags.name }}</a>
+    <h2>Title: {{ book.title }}</h2>
+    <li>Number of Pages: {{ book.num_pages }} </li>
+    <li>Date Published: {{ book.date_published }}</li>
+    <li>Author's Name: {{ book.author.name }}</li>
+    <li>Author's date of birth: {{ book.author.birth_date }} </li>
+    <li>Genre: {{ book.tags.name }}</li> 
 
-    </li>
+
